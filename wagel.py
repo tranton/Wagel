@@ -76,7 +76,7 @@ def Gross_To_Net():
     
 
 
-app = App(title="Salary Tool", width=500, height=300, layout="grid")
+app = App(title="Salary Tool", width=400, height=300, layout="grid")
 Title_Gross_Salary = Text(
     app, text="Enter your Gross Wages:", grid=[0, 0], align="left")
 User_Input_Salary_Gross = TextBox(
@@ -90,7 +90,7 @@ Options_text2 = Text(app, text="So nguoi phu thuoc: ",
 So_Nguoi_Phu_Thuoc_Options = ButtonGroup(app, options=[["1", "1"], ["2", "2"], [
     "3", "3"]], selected="1", horizontal=True, grid=[1, 3], align="left")
 Submit_Button = PushButton(app, command=Gross_To_Net,
-                           text="Submit", grid=[1, 4])
+                           text="Submit", grid=[1, 4], align="right")
 Result_Text = Text(app, text="Your NET Salary is: ", grid=[0, 5], align="left")
 Result_Net_Salary = Text(app, "", grid=[1, 5], align="right")
 Result_Text = Text(app, text="Thue Thu Nhap Ca Nhan: ", grid=[0, 6], align="left")
