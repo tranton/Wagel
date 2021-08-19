@@ -102,5 +102,6 @@ Result_BHYT = Text(app, "", grid=[1, 8], align="right")
 Result_Text = Text(app, text="Bao Hiem That Nghiep: ", grid=[0, 9], align="left")
 Result_BHTN = Text(app, "", grid=[1, 9], align="right")
 
-
+app.update()
 app.display()
+
